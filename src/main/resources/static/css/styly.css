@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background: rgb(5, 4, 2);
+    color: antiquewhite;
+    font-family: Righteous;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.tabulka {
+    text-align: left;
+}
+
+h1 {
+    font-family: Righteous;
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 45px;
+    padding-top: 105px;
+}
+
+.hlavicka {
+    background-image: url("../images/camel2.jpg");
+    padding: 80px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text {
+    margin: 0px;
+    padding: 10px;
+    font-family: Righteous;
+    font-weight: lighter;
+}
+
+table {
+    border-spacing: 0;
+    margin: auto;
+
+}
+
+td {
+    padding: 10px 20px;
+    border-bottom: solid 1px antiquewhite;
+}
+
+#last {
+    padding: 0;
+    border-bottom: rgba(9, 1, 0, 0.98);
+}
+
+img {
+    height: 300px;
+    weight: 300px;
+    margin: 20px;
+}
+
+#submit {
+    margin: 40px 0 50px 0;
+    display: block;
+    background-color: #cbbead;
+    color: rgba(81, 80, 79, 0.76);
+    font-family: Righteous, cursive;
+    text-align: center;
+    height: 60px;
+    width: 300px;
+    font-size: 1.2em;
+    position: absolute;
+    left: 50%;
+    /*-ms-transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
+}
+
+.vysledek {
+    font-family: Righteous;
+}
