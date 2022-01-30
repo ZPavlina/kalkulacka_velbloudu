@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/css/styly.css"
+          th:href="${'css/styly.css'}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Male-form</title>
+
+</head>
+
+<body>
+    <header class="hlavicka">
+        <h1>VELBLOUDÍ KALKULAČKA</h1>
+    </header>
+
+    <div class = "male-form">
+
+<form method="post">
+    <table>
+        <tr>
+            <td>
+                <label for="vzdelani">Nejvyšší dosažené vzdělání:</label></td>
+            <td>
+            <select name="vzdelani" id="vzdelani">
+                <option value="none" selected disabled hidden>
+                    Vyber možnost...
+                </option>
+                <option value="0">"bez vzdělání"</option>
+                <option value="1">"základní škola"</option>
+                <option value="2">"střední škola"</option>
+                <option value="3">"vyšší odborná škola"</option>
+                <option value="4">"vysoká škola"</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Umí to se šroubovákem?</td>
+            <td>
+                <label for="sroubovak_ano">Ano</label>
+                <input type="radio" name="sroubovak" id="sroubovak_ano" value="10">
+                <label for="sroubovak_ne">Ne</label>
+                <input type="radio" name="sroubovak" id="sroubovak_ne" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="uklid">Nejvyšší dosažené vzdělání:</label></td>
+            <td>
+                <select name="uklid" id="uklid">
+                    <option value="none" selected disabled hidden>
+                        Vyber možnost...
+                    </option>
+                    <option value="0">"Vůbec neuklízí."</option>
+                    <option value="1">"Občas uklidí nádobí."</option>
+                    <option value="2">"Celkem uklízí."</option>
+                    <option value="3">"Uklízí víc než já."</option>
+                    <option value="4">"Úklidem je posedlý."</option>
+                </select>
+            </td>
+        </tr>
+         <tr>
+             <td>Vlastní řidičský průkaz?</td>
+            <td>
+                <label for="ridicak_ano">Ano</label>
+                <input type="radio" name="ridicak" id="ridicak_ano" value="10">
+                <label for="ridicak_ne">Ne</label>
+                <input type="radio" name="ridicak" id="ridicak_ne" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="rodice">Žijí ještě jeho rodiče?</label></td>
+            <td>
+                <select name="rodice" id="rodice">
+                    <option value="none" selected disabled hidden>
+                        Vyber možnost...
+                    </option>
+                    <option value="3">"Oba jsou naživu."</option>
+                    <option value="2">"Žije již jen matka."</option>
+                    <option value="1">"Žije již jen otec."</option>
+                    <option value="0">"Oba jsou již po smrti."</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="last">
+                <input type="submit" value="Zjisti výsledek!" id="submit">
+
+        </tr>
+    </table>
+
+</form>
+    </div>
+</body>
+</html>

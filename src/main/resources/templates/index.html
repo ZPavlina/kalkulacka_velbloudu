@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/css/styly.css"
+          th:href="${'css/styly.css'}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Velbloudí kalkulačka</title>
+
+</head>
+
+<body class="content">
+    <header class="hlavicka">
+        <h1>VELBLOUDÍ KALKULAČKA</h1>
+    </header>
+
+    <section class="text">
+        <p>Jaká je cena tvého partnera v počtu velbloudů? Zde si to můžeš vypočítat, ale nejdříve
+            od tebe potřebujeme pár informací. </p>
+        <p>Kolik velbloudů dostaneš za svého partnera?</p>
+    </section>
+
+
+
+    <div class="obrazek">
+        <a href="male-form.html" th:href="@{male-form}">
+            <img src="../static/images/gender_male_ps5.png" th:src="'images/gender_male_ps5.png'" alt="boy" id="boy">
+        </a>
+        
+        <a href="female-form.html" th:href="@{female-form}">
+            <img src="../static/images/gender_female_ps4.png" th:src="'images/gender_female_ps4.png'" alt="girl" id="girl">
+            </a>
+    </div>
+  
+</body>
+</html>
