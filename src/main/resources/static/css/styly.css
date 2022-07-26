@@ -53,29 +53,12 @@ td {
     padding: 0;
     border-bottom: rgba(9, 1, 0, 0.98);
 }
-
 img {
-    height: 300px;
-    weight: 300px;
-    margin: 20px;
+    float: left;
+    margin: 0px;
+
 }
 
-#submit {
-    margin: 40px 0 50px 0;
-    display: block;
-    background-color: #cbbead;
-    color: rgba(81, 80, 79, 0.76);
-    font-family: Righteous, cursive;
-    text-align: center;
-    height: 60px;
-    width: 300px;
-    font-size: 1.2em;
-    position: absolute;
-    left: 50%;
-    /*-ms-transform: translate(-50%, -50%);*/
-    transform: translate(-50%, -50%);
-}
-
-.vysledek {
-    font-family: Righteous;
+.obrazek {
+    padding-left: 600px;
 }
